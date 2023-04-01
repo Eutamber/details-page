@@ -1,0 +1,219 @@
+.app{
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto;
+  box-shadow: 0 0 5px #d3d3d3;
+}
+.details{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.details .big-img{
+  max-width: 500px;
+  min-width: 290px;
+  overflow: hidden;
+  margin: 25px;
+}
+.big-img img{
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+}
+
+.details .box{
+  max-width: 500px;
+  min-width: 290px;
+  margin: 25px;
+}
+.box .row{  
+  display: flex;
+  justify-content: space-between;
+  font: normal 50px Verdana;
+}
+
+.box h2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.box .row span{
+  color: crimson;
+}
+
+.box p{
+  line-height: 1.5;
+  margin: 15px 0;
+}
+.thumb{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.thumb img{
+  width: 90px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+.thumb img.active{
+  opacity: 1;
+  border: 1px solid rgb(178, 120, 32);
+}
+
+.out{
+  background: #ffffff;
+}
+
+.icon{  
+  shape-outside: circle(50%);
+  width: 45px;
+  height: 45px;
+  float: left;
+  background: #333333;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-top: 35px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.heart{
+  color: rgb(255, 255, 255);
+  width: 30px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.heart-like {
+    color: red;
+    width: 30px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.Cart{
+  background: #FAF4B7;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+
+.Buy{
+  background: #fcb894;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Message{
+  background: #8fa2ff;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Cart-popup{
+  position: relative;
+  background-color: #FFF; 
+  border: none;
+  bottom: 10px;
+  left: 10%;
+  background: #FAF4B7;   
+  cursor: pointer;
+  padding: 15px 25px;
+  margin-top: 30px; 
+  bottom: 0%; 
+  font-weight: bold;
+}
+.Buy-popup{
+  position: relative;
+  background-color: #FFF; 
+  border: none;
+  bottom: 10px;
+  left: 10%;
+  background: #fcb894;   
+  cursor: pointer;
+  padding: 15px 25px;
+  margin-top: 30px; 
+  bottom: 0%; 
+  font-weight: bold;
+}
+.box-color{  
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+
+.choice{
+  width: 100px;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+
+.btn_div{
+  width: 25px;
+  height: 25px;  
+  background: #8b8b8b;
+  color: #000000;
+  border-radius: 50%;
+  border: none;  
+
+}
+.text{
+  right: 10 px;
+  
+}
+.app-header {
+  border-bottom: 1px solid rgb(106, 106, 106);
+}
+
+.app-header-item {
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.app-header-item-active {
+  background-color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 500px){
+  .thumb{
+    height: 50px;
+  }
+  .thumb img{
+    width: 50px;
+  }
+}
